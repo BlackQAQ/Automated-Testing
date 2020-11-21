@@ -510,7 +510,7 @@ public class TestingSelection {
                     String entry = cName + " " + mName + "\r\n";
                     boolean isTest = false;
                     //判断是否是测试用例
-                    if(mName.contains("<init>()V")) continue;
+                    if(mName.contains("init")) continue;
                     for (int k = 0; k < testClasses.size(); k++) {
                         if (cName.contains(testClasses.get(k))) {
                             isTest = true;
